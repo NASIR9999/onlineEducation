@@ -1,0 +1,272 @@
+
+
+*{
+    margin: 0;
+    padding: 0;
+
+}
+
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: sticky;
+    top: 0%;
+    cursor: pointer;
+}
+
+.logo{
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo img{
+    width: 90px;
+    border:3px; 
+    border-radius: 50px;
+    margin: 10px;
+
+}
+
+.nav-list{
+    width: 70%;
+    
+     display: flex;
+     align-items: center;
+    
+}
+
+.nav-list li{
+    list-style: none;
+   padding: 26px 30px;
+}
+
+.nav-list li a{
+text-decoration: none;
+font-size: 20px;
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.nav-list li a:hover{
+    color: white;
+    }
+
+.rightnav{
+    
+    width: 30%;
+    text-align: right;
+    padding: 0 23px;
+}
+
+#search{
+    padding: 5px;
+    font-size: 17px;
+    border: 2px; color: grey;
+    border-radius: 9px;
+}
+
+.background{
+    background: rgba(111, 99, 99, 0.7) url('../img/reg.jpg');
+    background-size: cover;
+    background-blend-mode: darken;
+    
+}
+
+.firstsection{
+    height: 100vh;
+}
+
+.box-main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    height: 80%;
+
+}
+
+.firstHalf{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+.secondHalf{
+    width: 30%;
+
+}
+
+.secondHalf img{
+    width: 70%;
+    border: 4px;
+    padding: 8px;
+    border-radius: 400px;
+    display: block;
+    margin: auto;
+
+}
+
+.text-big{
+    font-size: 41px;
+    align-items: center;
+    margin: 55px;
+    padding-top: 100px;
+    font-weight: bold;
+}
+
+.text-big1{
+    font-size: 41px;
+    align-items: center;
+    margin: 55px;
+    padding-top: 200px;
+    font-weight: bold;
+}
+
+.text-big2{
+    font-size: 41px;
+    align-items: center;
+    margin: 55px;
+    padding-top: 300px;
+    font-weight: bold;
+}
+
+.text-small{
+    font-size: 18px;
+    align-items: center;
+    margin: 60px;
+    
+}
+
+.btn{
+    padding: 8px 20px;
+    margin : 40px 20px;
+    border: 2px; 
+    border-radius: 8px;
+    font-size: 18px;
+    background:white;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.btn-sm{
+   padding: 6px 4px;
+   vertical-align:middle ;
+   font-size: 16px;
+}
+
+.btn-dark{
+    color: black;
+    border:2px black;
+}
+
+.buttons{
+    padding-left: 37px;
+}
+
+.section{
+    height: 750px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    max-width: 200%;
+    margin: auto;
+    
+    
+}
+
+
+.section-left{
+    height: 750px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    max-width: 200%;
+    margin: auto;
+    flex-direction: row-reverse;
+}
+
+.thumbnail img{
+    border: 2px black;
+    border-radius: 26px;
+    margin-top: 250px;
+}
+.sectionTag{
+    padding: 16px o;
+}
+.contact{
+    background-color:#ccefed;
+    height: 750px;
+}
+.text-center{
+     text-align: center;
+     padding: 30px;
+     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+     font-size: 35px;
+}
+.form{
+    margin:42px auto;
+    max-width: 1200px;
+}
+.form-input{
+    padding: 5px 13px;
+    margin: 14px 0;
+    width: 100%;
+    font-size: 19px;
+    border: 2px gray;
+    border-radius: 6px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.text-footer{
+    text-align: center;
+     padding: 30px 0;
+     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+     display: flex;
+     justify-content: center;
+     color:white;
+}
+
+.burger{
+    display: none;
+   position: absolute;
+   cursor: pointer;
+   right: 5%;
+   top: 33px;
+}
+
+.line{
+    width: 33px;
+    background-color: white;
+    margin: 3px 3px;
+    height: 4px;   
+}
+
+@media only screen and (max-width: 1140px){
+    .nav-list{
+        flex-direction: column;
+    }
+    .navbar{
+        flex-direction: column;
+        transition: all 0.3s ease-out;
+    }
+    .rightnav{
+        text-align: center;
+    }
+    #search{
+        width: 100%;
+    }
+    .burger{
+        display: block;
+    }
+    .h-nav-resp{
+        height: 72px;
+    }
+    .v-class-resp{
+        opacity: 0;
+    }
+}
